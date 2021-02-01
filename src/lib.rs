@@ -1,6 +1,11 @@
 #![allow(unused_imports)]
 #![allow(dead_code)]
-use near_sdk::{
+// Ref: https://github.com/snjax/nep4_nostd_example/blob/main/src/lib.rs
+#![no_std]
+#![feature(core_intrinsics, alloc_error_handler)]
+
+extern crate alloc;
+use near_sdk_pure::{
   borsh::{self, BorshDeserialize, BorshSerialize},
   collections::*,
   *,

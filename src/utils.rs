@@ -1,4 +1,5 @@
 use crate::*;
+use alloc::format;
 
 pub fn log_stuff() {
   env::log(format!("prep gas: {}", env::prepaid_gas()).as_bytes());

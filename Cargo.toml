@@ -8,10 +8,12 @@ edition = "2018"
 crate-type = ["cdylib", "rlib"] # because wasm
 
 [dependencies]
-near-sdk = { git = "https://github.com/near/near-sdk-rs.git", tag="2.4.0" }
-
-[dev-dependencies]
-near-sdk-sim = { git = "https://github.com/near/near-sdk-rs.git", tag="2.4.0" }
+# ref: https://github.com/snjax/nep4_nostd_example/blob/main/Cargo.toml
+serde = { version = "1", features = ["derive", "alloc"], default-features = false }
+serde_json = {version = "1", default-features=false, features = ["alloc"]}
+near-sdk-pure = {git = "https://github.com/snjax/near-sdk-pure-rs", branch="main"}
+borsh = {version = "0.8.1", default-features=false}
+wee_alloc = "0.4.5"
 
 [profile.release]
 codegen-units = 1
