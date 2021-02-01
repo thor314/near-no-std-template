@@ -5,8 +5,6 @@ This is a `no-std` version of my prior `near-template`. The final wasm blob size
 
 Note that Simulation Tests are not currently functional in `near_sdk_pure`. The `tests` directory has been removed, relative to `near-template`.
 
-Note that
-
 This repo references patterns here: https://github.com/snjax/nep4_nostd_example.
 
 Contains:
