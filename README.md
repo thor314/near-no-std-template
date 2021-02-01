@@ -3,7 +3,7 @@ Modified from https://github.com/thor314/near-template.
 
 This is a `no-std` version of my prior `near-template`. The final wasm blob size is reduced from 43kB to 37kB. This is especially valuable if deploying this contract repeatedly, as in a [factory pattern](https://github.com/thor314/near-factory-pattern/tree/db380d1729041ec4ed9e6b477f98fddac2ed23f4).
 
-Note that Simulation Tests and Cross Contract calls (the latter relies on `ext_contract` which relies ond `std`) are not currently functional in `near_sdk_pure`. The `tests` directory has been removed, relative to `near-template`.
+Note that Simulation Tests are not currently functional in `near_sdk_pure`. The `tests` directory has been removed, relative to `near-template`.
 
 Note that
 
